@@ -1,0 +1,445 @@
+/* NAVBAR */
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.search-input {
+    width: 250px;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero-title {
+    font-size: 68px;
+    font-weight: 900;
+    color: #e6b400;
+}
+
+.hero-sub {
+    font-size: 42px;
+    font-weight: 700;
+    color: #777;
+}
+
+.hero-text {
+    font-size: 16px;
+    width: 90%;
+    color: #555;
+}
+
+.hero-btn {
+    padding: 12px 35px;
+    border: 2px solid #000;
+    background: transparent;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.hero-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.hero-img {
+    max-width: 490px;
+    width: 100%;
+}
+
+/* SERVICES */
+/* Yellow background area */
+.services-section {
+    background-color: #d8b200; 
+    padding-bottom: 80px;
+}
+
+/* Lift cards upward (overlap effect) */
+.services-overlap {
+    margin-top: -90px;
+}
+
+/* Card styling */
+.service-box { }
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+}
+
+.service-title {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.service-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ABOUT */
+.about-section {
+    background: #efefef;
+}
+
+.about-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+}
+
+.about-text {
+    max-width: 750px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin: 0 auto;
+}
+
+.about-btn {
+    background: #e6b400;
+    border: none;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.about-btn:hover {
+    background: #c89c02;
+    color: white;
+}
+
+/* SECOND HERO (HOW CAN WE HELP YOU) */
+.hero-section1 {
+    background: url("bg_help.png") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-box1 {
+    background: #FFD700;
+    padding: 40px;
+    border-left: 10px solid #FFD700;
+    max-width: 450px;
+}
+
+.hero-title1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #0e0c0d;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.hero-subtext1 {
+    font-size: 1.2rem;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+/* POPULAR SERVICES */
+.popular-services {
+  background: url("services_bg.png") no-repeat right top;
+  background-size: cover;
+}
+
+.service-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+/* BLACK HOME REPAIR SECTION */
+.vishnu{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.services-title1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    font-size: 14px;
+    color: #cfcfcf;
+    margin-bottom: 50px;
+}
+
+.service-box1 h5 {
+    color: yellow;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.service-box1 p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.btn-read {
+    border: 1px solid #000;
+    color: #e6b400;
+    background: transparent;
+    padding: 10px 35px;
+    margin-top: 40px;
+    transition: 0.3s;
+}
+
+.btn-read:hover {
+    background: #e6b400;
+    color: #111;
+}
+
+/* IMAGE ABOUT SPLIT SECTION */
+.about-section1 {
+    background-image:linear-gradient(to right,#e5e5e5 50%,white 50%);
+    padding: 100px 0;
+}
+
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.yellow-box {
+    background: #d9b200;
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    z-index: 0;
+}
+
+.main-img {
+    width: 550px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.vishnu1{
+    margin-top: 30px;
+}
+
+.about-text {
+    font-size: 15px;
+    color: #4b4b4b;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.credits {
+    color: #b63e3e;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* CONTACT SECTION – DARK */
+.contact-section {
+    background: #181818;
+}
+
+/* relative wrapper so card can be absolute inside */
+.contact-wrapper {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* white form base */
+.form-box {
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    min-height: 330px;
+    padding: 120px 20px 80px 120px!important;
+    margin-left: 220px;  /* shifts form to the right */
+}
+
+/* yellow card on top/left */
+.contact-info-box {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 2;
+    width: 320px;
+    min-height: 320px;
+    background: #d9b200;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+}
+
+/* simple text styles inside card */
+.info-title {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* fields */
+.input-field {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+/* submit button */
+.submit-btn {
+    border: 1px solid #000;
+    background: transparent;
+    padding: 8px 28px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* footer styles */
+.footer-section {
+    background: #181818;
+    color: #fff;
+}
+
+.footer-logo {
+    font-size: 32px;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    background: #222;
+}
+
+.footer-text {
+    font-size: 13px;
+    opacity: .8;
+}
+
+
+/* =========================
+   RESPONSIVE FIXES
+   (ONLY MOBILE/LAPTOP CHANGES)
+========================= */
+
+/* medium screens */
+@media(max-width: 992px){
+    .hero-title { font-size: 50px; }
+    .hero-sub { font-size: 32px; }
+    .search-input { width: 180px; }
+    .service-box { border: none; }
+
+    /* contact: remove overlap on tablet */
+    .form-box {
+        margin-left: 0;
+        padding: 60px 30px !important;
+    }
+    .contact-info-box {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* split about section */
+    .about-section1 {
+        background:#e5e5e5;
+        text-align:center;
+    }
+    .img-wrapper {
+        display:block;
+        margin:0 auto 40px;
+    }
+}
+
+/* tablets & small phones */
+@media (max-width: 768px) {
+    /* hero center on mobile */
+    .hero {
+        text-align: center;
+    }
+    .hero-text {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hero-img {
+        margin-top: 20px;
+    }
+
+    .services-overlap {
+        margin-top: 0;
+    }
+
+    /* yellow hero section */
+    .hero-section1 {
+        height: auto;
+        padding: 60px 0;
+        background-position: center top;
+    }
+    .hero-box1 {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .hero-title1 {
+        font-size: 2.5rem;
+    }
+
+    /* split about – image full width */
+    .main-img {
+        width: 100%;
+    }
+    .yellow-box {
+        width: 80%;
+        left: -10px;
+        bottom: -30px;
+        height: 160px;
+    }
+
+    /* contact section */
+    .contact-wrapper {
+        padding: 40px 0;
+    }
+}
+
+/* small phones */
+@media (max-width: 576px) {
+    .hero-title { font-size: 40px; }
+    .hero-sub { font-size: 26px; }
+
+    .hero-box1 {
+        padding: 25px;
+    }
+    .hero-title1 {
+        font-size: 2.1rem;
+    }
+
+    .form-box {
+        padding: 40px 20px !important;
+    }
+}
