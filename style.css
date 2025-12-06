@@ -1,21 +1,62 @@
-/* NAVBAR */
-.navbar{
+/* =========================
+   NAVBAR
+========================= */
+/* SEARCH BAR */
+.search-input {
+    width: 220px;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    padding: 6px 12px;
+    transition: 0.3s;
+}
+
+.search-input:focus {
+    width: 260px;
+    background: white;
+    border-color: #e6b400;
+    box-shadow: none;
+}
+
+.navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-.search-input {
-    width: 250px;
-    background: #f2f2f2;
-    border: 1px solid #ccc;
+    background: #ffffff;
 }
 
-.menu-icon {
-    font-size: 28px;
-    cursor: pointer;
+/* Navbar links */
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: #333;
+    transition: 0.3s;
 }
 
-/* HERO */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #e6b400;
+}
+
+/* Logo text */
+.navbar-brand {
+    font-size: 26px;
+    font-weight: 800;
+    color: #222;
+}
+
+/* Toggler (mobile hamburger icon) */
+.navbar-toggler {
+    border: none;
+}
+
+/* Optional: Change navbar-toggler icon color */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+/* =========================
+   HERO
+========================= */
 .hero-title {
     font-size: 68px;
     font-weight: 900;
@@ -52,20 +93,18 @@
     width: 100%;
 }
 
-/* SERVICES */
-/* Yellow background area */
+
+/* =========================
+   SERVICES SECTION
+========================= */
 .services-section {
     background-color: #d8b200; 
     padding-bottom: 80px;
 }
 
-/* Lift cards upward (overlap effect) */
 .services-overlap {
     margin-top: -90px;
 }
-
-/* Card styling */
-.service-box { }
 
 .service-icon {
     width: 55px;
@@ -82,7 +121,10 @@
     color: #555;
 }
 
-/* ABOUT */
+
+/* =========================
+   ABOUT SECTION (Gray)
+========================= */
 .about-section {
     background: #efefef;
 }
@@ -115,7 +157,10 @@
     color: white;
 }
 
-/* SECOND HERO (HOW CAN WE HELP YOU) */
+
+/* =========================
+   HERO SECTION 2 (Help Box)
+========================= */
 .hero-section1 {
     background: url("bg_help.png") no-repeat center;
     background-size: cover;
@@ -134,7 +179,7 @@
 .hero-title1 {
     font-size: 4rem;
     font-weight: 900;
-    color: #0e0c0d;
+    color: #23631d;
     line-height: 1.1;
     text-transform: uppercase;
 }
@@ -147,41 +192,43 @@
     margin-bottom: 10px;
 }
 
-/* POPULAR SERVICES */
+
+/* =========================
+   POPULAR SERVICES
+========================= */
 .popular-services {
-  background: url("services_bg.png") no-repeat right top;
-  background-size: cover;
+    background: url("services_bg.png") no-repeat right top;
+    background-size: cover;
 }
 
 .service-card img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
 }
 
-/* BLACK HOME REPAIR SECTION */
-.vishnu{
+
+/* =========================
+   BLACK SECTION
+========================= */
+.vishnu {
     background-color: #1a1a1a;
     color: #ffffff;
-    font-family: Arial, sans-serif;
 }
 
 .services-title1 {
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .sub-title {
     font-size: 14px;
     color: #cfcfcf;
-    margin-bottom: 50px;
 }
 
 .service-box1 h5 {
     color: yellow;
     font-weight: 700;
-    margin-bottom: 10px;
 }
 
 .service-box1 p {
@@ -194,7 +241,6 @@
     color: #e6b400;
     background: transparent;
     padding: 10px 35px;
-    margin-top: 40px;
     transition: 0.3s;
 }
 
@@ -203,15 +249,17 @@
     color: #111;
 }
 
-/* IMAGE ABOUT SPLIT SECTION */
+
+/* =========================
+   ABOUT SPLIT IMAGE
+========================= */
 .about-section1 {
-    background-image:linear-gradient(to right,#e5e5e5 50%,white 50%);
+    background-image: linear-gradient(to right,#e5e5e5 50%,white 50%);
     padding: 100px 0;
 }
 
 .img-wrapper {
     position: relative;
-    display: inline-block;
 }
 
 .yellow-box {
@@ -221,7 +269,6 @@
     position: absolute;
     left: -50px;
     bottom: -50px;
-    z-index: 0;
 }
 
 .main-img {
@@ -231,29 +278,14 @@
     z-index: 2;
 }
 
-.vishnu1{
-    margin-top: 30px;
-}
 
-.about-text {
-    font-size: 15px;
-    color: #4b4b4b;
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-.credits {
-    color: #b63e3e;
-    font-size: 13px;
-    margin-bottom: 20px;
-}
-
-/* CONTACT SECTION – DARK */
+/* =========================
+   CONTACT SECTION
+========================= */
 .contact-section {
     background: #181818;
 }
 
-/* relative wrapper so card can be absolute inside */
 .contact-wrapper {
     position: relative;
     max-width: 950px;
@@ -261,17 +293,15 @@
     padding: 60px 0;
 }
 
-/* white form base */
 .form-box {
     position: relative;
     z-index: 1;
     background: #ffffff;
     min-height: 330px;
-    padding: 120px 20px 80px 120px!important;
-    margin-left: 220px;  /* shifts form to the right */
+    padding: 120px 20px 80px 120px !important;
+    margin-left: 220px;
 }
 
-/* yellow card on top/left */
 .contact-info-box {
     position: absolute;
     top: 100px;
@@ -283,26 +313,15 @@
     box-shadow: 0 4px 25px rgba(0,0,0,0.4);
 }
 
-/* simple text styles inside card */
-.info-title {
-    font-weight: 700;
-    font-size: 16px;
-}
-
-/* fields */
 .input-field {
     border: none;
     border-bottom: 1px solid #000;
-    border-radius: 0;
-    font-size: 14px;
 }
 
-/* submit button */
 .submit-btn {
     border: 1px solid #000;
     background: transparent;
     padding: 8px 28px;
-    font-size: 14px;
     transition: .3s;
 }
 
@@ -311,7 +330,10 @@
     color: #fff;
 }
 
-/* footer styles */
+
+/* =========================
+   FOOTER
+========================= */
 .footer-section {
     background: #181818;
     color: #fff;
@@ -321,113 +343,79 @@
     font-size: 32px;
 }
 
-.footer-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .footer-nav li a {
     text-decoration: none;
     color: #cfcfcf;
-    font-size: 14px;
 }
 
 .footer-bottom {
     background: #222;
 }
 
-.footer-text {
-    font-size: 13px;
-    opacity: .8;
-}
-
 
 /* =========================
    RESPONSIVE FIXES
-   (ONLY MOBILE/LAPTOP CHANGES)
 ========================= */
 
-/* medium screens */
 @media(max-width: 992px){
     .hero-title { font-size: 50px; }
     .hero-sub { font-size: 32px; }
-    .search-input { width: 180px; }
-    .service-box { border: none; }
 
-    /* contact: remove overlap on tablet */
     .form-box {
         margin-left: 0;
         padding: 60px 30px !important;
     }
+
     .contact-info-box {
         position: static;
         width: 100%;
         margin-bottom: 20px;
     }
 
-    /* split about section */
     .about-section1 {
-        background:#e5e5e5;
-        text-align:center;
-    }
-    .img-wrapper {
-        display:block;
-        margin:0 auto 40px;
+        background: #e5e5e5;
+        text-align: center;
     }
 }
 
-/* tablets & small phones */
 @media (max-width: 768px) {
-    /* hero center on mobile */
     .hero {
         text-align: center;
     }
     .hero-text {
         width: 100%;
-        margin: 0 auto;
-    }
-    .hero-img {
-        margin-top: 20px;
     }
 
     .services-overlap {
         margin-top: 0;
     }
 
-    /* yellow hero section */
     .hero-section1 {
         height: auto;
         padding: 60px 0;
-        background-position: center top;
     }
+
     .hero-box1 {
         max-width: 100%;
-        margin: 0 auto;
         text-align: center;
     }
+
     .hero-title1 {
         font-size: 2.5rem;
     }
 
-    /* split about – image full width */
     .main-img {
         width: 100%;
     }
+
     .yellow-box {
         width: 80%;
         left: -10px;
         bottom: -30px;
         height: 160px;
     }
-
-    /* contact section */
-    .contact-wrapper {
-        padding: 40px 0;
-    }
 }
 
-/* small phones */
 @media (max-width: 576px) {
     .hero-title { font-size: 40px; }
     .hero-sub { font-size: 26px; }
@@ -435,6 +423,7 @@
     .hero-box1 {
         padding: 25px;
     }
+
     .hero-title1 {
         font-size: 2.1rem;
     }
